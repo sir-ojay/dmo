@@ -1,0 +1,159 @@
+.desktop__body {
+  max-width: 1440px;
+background-color: #CFFADA;
+  padding: 40px 90px 40px 90px;
+ 
+
+  .desktop__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .desktop__container {
+    height: 582px;
+    flex: 20%;
+    margin: 10px;
+    padding: 2%;
+    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+  }
+  .flex__between {
+    display: flex;
+    justify-content: space-between;
+
+    .logo__wrapper {
+      width: 40%;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .bond__wrapper {
+      width: 50%;
+      height: 0.5%;
+      border: 1px solid #edfcf1;
+      background-color: #edfcf1;
+      border-radius: 20px;
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 6%;
+      }
+    }
+  }
+  .text_weight_container {
+    text-align: center;
+
+    .text_weight {
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
+  .text_faint {
+    color: #8e8b8b;
+  }
+  .text_bold {
+    font-weight: 500;
+  }
+  .button__wrapper{
+    display: flex;
+    justify-content: center;
+   .button{
+    width: 50%;
+    height: 10%;
+    border: 1px solid #139135;
+    background-color: #139135;
+    border-radius: 5px;
+
+    p{
+        color: #ffffff;
+        font-size: 18px;
+        padding-left: 20%;
+    }
+   }
+   .icon{
+    font-size:40px;
+    margin: 10px 0px 0px 10px;
+   }
+  }
+
+}
+
+@media screen and (min-width:350px) and (max-width:650px){
+    .desktop__body {
+   height: 310vh;
+    padding: 40px 20% 20px 15%;
+ 
+
+  .desktop__wrapper {
+     flex-direction: column;
+  }
+  .desktop__container {
+    height: 572px;
+    flex: 20%;
+    margin: 10px;
+    padding: 2%;
+
+  }
+  .flex__between {
+    display: flex;
+    justify-content: space-between;
+
+    .logo__wrapper {
+      width: 40%;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .bond__wrapper {
+      width: 50%;
+      height: 0.5%;
+      border: 1px solid #edfcf1;
+      background-color: #edfcf1;
+      border-radius: 20px;
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 6%;
+      }
+    }
+  }
+  .text_weight_container {
+    text-align: center;
+
+    .text_weight {
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
+  .text_faint {
+    color: #8e8b8b;
+  }
+  .text_bold {
+    font-weight: 500;
+  }
+  .button__wrapper{
+    display: flex;
+    justify-content: center;
+   .button{
+    width: 50%;
+    height: 10%;
+  
+    border-radius: 5px;
+
+    p{
+        color: #ffffff;
+        font-size: 18px;
+        padding-left: 20%;
+    }
+   }
+  }
+}
+
+}

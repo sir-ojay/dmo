@@ -1,0 +1,34 @@
+.nav__wrapper {
+  .logo__warapper {
+    .nav__logo {
+      height: 50.66666793823242px;
+      width: 300px;
+    }
+  }
+
+  .login__font {
+    color: #3ade76;
+  }
+  .signup__font {
+    color: #fff;
+  }
+  .icon {
+    width: 40px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .nav__wrapper {
+    margin: 0;
+    padding: 0.5em;
+    padding: 1em;
+    .logo__warapper {
+      width: 40%;
+      .nav__logo {
+      height: 50.66666793823242px;
+      width: 300px;
+      }
+    }
+  }
+}

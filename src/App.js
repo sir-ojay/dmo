@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import "aos/dist/aos.css";
+import Aos from "aos";
+import Home from "./pages/home/Home";
+import SignUp from "./pages/signup/SignUp";
+import Carts from "./pages/carts/Carts";      
+import DesktopOne from "./pages/desktop1/DesktopOne";
+import DesktopTwo from "./pages/desktop2/DesktopTwo";
+
 
 function App() {
+
+
+   Aos.init();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+   
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route
+          path="/desktop-one"
+          element={<DesktopOne  />}
+        />
+        <Route
+          path="/desktop-two"
+          element={<DesktopTwo  />}
+        />
+        <Route path="/cart" element={<Carts />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
