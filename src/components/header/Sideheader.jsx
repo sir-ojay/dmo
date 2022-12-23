@@ -22,7 +22,7 @@ const Sideheader = () => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/" onClick={toggle}>
+          <SidebarLink to="/desktop-one" onClick={toggle}>
             Bond Offer
           </SidebarLink>
           <SidebarLink to="/" onClick={toggle}>

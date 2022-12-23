@@ -38,7 +38,7 @@ const Navbar = () => {
       </MobileIcon>
       <NavMenu>
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/desktop-two" spy={true} smooth={true} duration={500}>
             {" "}
             Bond Offer
           </NavLinks>
@@ -75,7 +75,7 @@ const Navbar = () => {
         <SignupContainer>
           <NavItem>
             <NavLinks
-              to="/"
+              to="/sign-up"
               spy={true}
               smooth={true}
               duration={500}
@@ -88,7 +88,7 @@ const Navbar = () => {
         </SignupContainer>
 
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/cart" spy={true} smooth={true} duration={500}>
             {" "}
             <BsCart2 className="icon" />{" "}
           </NavLinks>

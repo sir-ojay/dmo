@@ -36,7 +36,7 @@ const Header = () => {
       </MobileIcon>
       <NavMenu>
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/desktop-one" spy={true} smooth={true} duration={500}>
             {" "}
             Bond Offer
           </NavLinks>
@@ -62,7 +62,7 @@ const Header = () => {
           </NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/cart" spy={true} smooth={true} duration={500}>
             {" "}
             <BsCart2 className="icon" />{" "}
           </NavLinks>
