@@ -43,13 +43,25 @@ const Header = () => {
         </NavItem>
 
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500} className='text_faint'>
+          <NavLinks
+            to="/"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="text_faint"
+          >
             {" "}
             Portfolio{" "}
           </NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500} className='text_faint'>
+          <NavLinks
+            to="/"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="text_faint"
+          >
             {" "}
             Notification{" "}
           </NavLinks>
@@ -62,7 +74,7 @@ const Header = () => {
           </NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/cart" spy={true} smooth={true} duration={500}>
             {" "}
             <BsCart2 className="icon" />{" "}
           </NavLinks>

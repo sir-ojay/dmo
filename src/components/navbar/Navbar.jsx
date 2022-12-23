@@ -88,7 +88,7 @@ const Navbar = () => {
         </SignupContainer>
 
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/cart" spy={true} smooth={true} duration={500}>
             {" "}
             <BsCart2 className="icon" />{" "}
           </NavLinks>

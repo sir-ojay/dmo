@@ -1,12 +1,15 @@
 .cart_container {
   background-color: #e8ffee;
+  p {
+    color: gray;
+  }
 
   .cart__wapper {
     padding: 10px 55px 10px 31px;
     .cart__flex {
       display: flex;
       justify-content: space-between;
-      height: 100px;
+      height: 110px;
       padding: 0.4% 5%;
       margin: 10px;
       background-color: #e8ffee;
@@ -18,38 +21,57 @@
         justify-content: inherit;
         width: 70%;
 
+        .checkbox__wrapper {
+          margin-top: 5.5%;
+        }
+
         .image_wrapper {
+          margin-top: 2.5%;
           width: 10%;
           img {
             width: 70px;
             height: 70px;
           }
         }
+
+        h3 {
+          margin-top: 4.5%;
+        }
+
         .auto_wrapper {
           background-color: #e8ffee;
           border: 1px solid #006e1d;
           border-radius: 5px;
           height: 40px;
-          width: 15%;
-          margin-top: 2%;
+
+          margin-top: 4%;
 
           .text_green {
             color: darkgreen;
-            padding: 0px 0px 10px 27px;
+            padding: 2px 12px 1px 12px;
+            line-height: 0ch;
           }
         }
         .text_red {
+          margin-top: 4.5%;
           color: red;
         }
+      }
+      .cart_border {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 13vw;
+        border: 1px solid #006e1d;
+        border-radius: 5px;
+        
+        p{padding-left: 2%;}
 
-        .savings__det {
+        .cart_counter {
+          display: flex;
           width: 100%;
-
-          .currency_wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-          }
+          justify-content: space-around;
+          align-items: center;
         }
       }
     }
@@ -63,6 +85,10 @@
       .fees__flex {
         display: flex;
         justify-content: space-between;
+
+        .total {
+          text-align: right;
+        }
       }
     }
 
@@ -81,6 +107,16 @@
           color: #fff;
           padding: 1px 2px 2px 20%;
         }
+      }
+    }
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 550px) {
+  .cart_container {
+    .cart__wapper {
+      padding: 10px;
+      .cart__flex {
+        display: none;
       }
     }
   }

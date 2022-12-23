@@ -3,6 +3,8 @@ import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Link as LinkR } from "react-router-dom";
 
+
+
 export const NavContainer = styled.div`
   display: flex;
   width: 100%;
@@ -105,6 +107,8 @@ export const SignupContainer = styled.div`
 `;
 
 // `````````Sidebar Elements````````
+
+
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;

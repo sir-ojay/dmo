@@ -8,8 +8,14 @@ import {
   SidebarMenu
 
 } from "./NavbarStyles";
+import { useState } from "react";
 
-const Sidebar = ({ toggle, isOpen }) => {
+const Sidebar = () => {
+   const [isOpen, setIsOpen] = useState(false);
+
+   const toggle = () => {
+     setIsOpen(!isOpen);
+   };
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -18,19 +24,19 @@ const Sidebar = ({ toggle, isOpen }) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/about" onClick={toggle}>
+          <SidebarLink to="/" onClick={toggle}>
             Bond Offer
           </SidebarLink>
-          <SidebarLink to="/project" onClick={toggle}>
+          <SidebarLink to="/" onClick={toggle}>
             DMO{" "}
           </SidebarLink>
-          <SidebarLink to="/project" onClick={toggle}>
+          <SidebarLink to="/" onClick={toggle}>
             Features{" "}
           </SidebarLink>
-          <SidebarLink to="/project" onClick={toggle}>
+          <SidebarLink to="/" onClick={toggle}>
             Login{" "}
           </SidebarLink>
-          <SidebarLink to="/project" onClick={toggle}>
+          <SidebarLink to="/" onClick={toggle}>
             Sign Up{" "}
           </SidebarLink>
 

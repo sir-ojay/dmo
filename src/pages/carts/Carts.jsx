@@ -3,7 +3,8 @@ import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import coatofarm from "../../assets/Coat-of-Arms-of-Nigeria.svg";
 import Header from "../../components/header/Header";
-import "./cart.scss";
+import "./carts.scss";
+
 
 const Carts = () => {
   const savingsDetails = [
@@ -32,37 +33,36 @@ const Carts = () => {
       <div className="cart_container">
         <div className="cart__wapper">
           {savingsDetails.map((savingsdetail) => (
-            <div key={savingsdetail.id} className="cart__flex">
-              <div className="cart__flex_start">
-                <div className="checkbox__wrapper">
-                  <input type="checkbox" className="checkbox" />
-                </div>
-                <div className="image_wrapper">
-                  <img src={savingsdetail.logo} alt="" />
-                </div>
-                <h3>{savingsdetail.days}</h3>
-                <div className="auto_wrapper">
-                  <p className="text_green">{savingsdetail.type}</p>
+            <div key={savingsdetail.id}>
+              <div className="cart__flex">
+                <div className="cart__flex_start">
+                  <div className="checkbox__wrapper">
+                    <input type="checkbox" className="checkbox" />
+                  </div>
+                  <div className="image_wrapper">
+                    <img src={savingsdetail.logo} alt="" />
+                  </div>
+                  <h3>{savingsdetail.days}</h3>
+
+                  <div className="auto_wrapper">
+                    <p className="text_green">{savingsdetail.type}</p>
+                  </div>
+
+                  <p className="text_red">{savingsdetail.value}</p>
                 </div>
 
-                <p className="text_red">{savingsdetail.value}</p>
-              </div>
-
-              <div className="savings__det">
-                <p>{savingsdetail.currency}</p>
-                <div className="currency_wrapper">
-                  <p>
-                    {" "}
-                    <b>300,000.00</b>{" "}
-                  </p>
-               
-                    <AiOutlineMinusCircle />
-                
-                  <p>{savingsdetail.counter}</p>
-             
-                    {" "}
-                    <AiOutlinePlusCircle />
-            
+                <div>
+                  <p>{savingsdetail.currency}</p>
+                  <div className="cart_border">
+                    <p>
+                      {" "}
+                      <b>300,000</b>{" "}
+                    </p>
+                    <div className="cart_counter">
+                      <AiOutlineMinusCircle />
+                      <p>{savingsdetail.counter}</p> <AiOutlinePlusCircle />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -72,9 +72,9 @@ const Carts = () => {
             <div className="fees__flex">
               <p> Fees + Taxes </p>
               <p> #2.09</p>
-              <div>
-                <p>Total Buy</p>
-                <p>#600,000.00</p>
+              <div className="total">
+                <p className="text_faint">Total Buy</p>
+                <b>#600,000.00</b>
               </div>
             </div>
 
