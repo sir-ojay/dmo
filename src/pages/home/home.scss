@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0% 10% 0 4%;
-  height: 86.6vh;
- background-color: #CFFADA;
+  height: 77vh;
+background-color: #E8FFEE;
 
   .home__container {
     width: 40%;
-    padding-top: 8%;
+    padding-top: 5%;
 
     h1 {
       font-size: 3.5em;
@@ -32,7 +32,7 @@
           font-size: 24px;
           font-weight: 500;
           color: #fff;
-          padding: 0.1% 15%;
+         padding: 1px 2px 2px 20%;
 
           .icon {
             padding-top: 5px;
@@ -60,7 +60,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 0% 10% 0 10%;
-    height: 97vh;
+    height: 103vh;
     width: 89%;
 
 

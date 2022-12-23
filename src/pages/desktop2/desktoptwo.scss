@@ -1,6 +1,6 @@
 .desktop__body {
   max-width: 1440px;
-background-color: #CFFADA;
+background-color: #e8ffee;
   padding: 40px 90px 40px 90px;
  
 
@@ -10,12 +10,12 @@ background-color: #CFFADA;
     justify-content: space-around;
   }
   .desktop__container {
-    height: 582px;
+    height: 600px;
     flex: 20%;
     margin: 10px;
     padding: 2%;
-    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
-    border: 1px solid #d7d7d7;
+  background: linear-gradient(124.4deg, #e8ffee 10.8%, #e8ffee 87.34%);
+     border: 1px solid #006E1D;
     border-radius: 15px;
   }
   .flex__between {
@@ -41,6 +41,7 @@ background-color: #CFFADA;
         font-size: 16px;
         font-weight: 500;
         padding-left: 6%;
+         color: gray;
       }
     }
   }
@@ -84,7 +85,7 @@ background-color: #CFFADA;
 
 @media screen and (min-width:350px) and (max-width:650px){
     .desktop__body {
-   height: 310vh;
+   height: 290vh;
     padding: 40px 20% 20px 15%;
  
 

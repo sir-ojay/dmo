@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import coatofarm from "../../assets/Coat-of-Arms-of-Nigeria.svg";      
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';     
-import './desktopone.scss'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'; 
+import './deskone.scss'    
+
 
 const DesktopOne = () => {
 
@@ -91,7 +92,7 @@ const DesktopOne = () => {
   return (
     <>
       <Header />
-      <div className="desktop__body">
+      <div className="desktopone__body">
         <div className="desktop__wrapper">
           {desktopDetails.map((desktopDetail) => (
             <div className="desktop__container" key={desktopDetail.id}>

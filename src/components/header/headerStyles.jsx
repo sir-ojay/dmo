@@ -9,13 +9,13 @@ import { Link as LinkR } from "react-router-dom";
 export const NavContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 10;
   justify-content: space-between;
   align-items: center;
-  // padding: 0px 10px 0px 0px;
+  padding: 10px 10px 0px 0px;
   position: sticky;
-  background: #cffada;
+  background-color: #e8ffee;
   top: 0;
   @media screen and (max-width: 768px) {
     padding: 1em;

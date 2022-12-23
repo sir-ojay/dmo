@@ -1,6 +1,6 @@
-.desktop__body {
+.desktopone__body {
   max-width: 1440px;
-background-color: #CFFADA;
+  background-color: #e8ffee;
   padding: 40px 0px 40px 0px;
  
 
@@ -10,11 +10,11 @@ background-color: #CFFADA;
     justify-content: space-between;
   }
   .desktop__container {
-    height: 582px;
-    flex: 20%;
+    height: 620px;
+    flex: 15%;
     margin: 10px;
-    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
-    border: 1px solid #d7d7d7;
+    background: linear-gradient(124.4deg, #e8ffee 10.8%, #e8ffee 87.34%);
+    border: 1px solid #006E1D;
     border-radius: 15px;
   }
   .flex__between {
@@ -22,7 +22,7 @@ background-color: #CFFADA;
     justify-content: space-between;
 
     .logo__wrapper {
-      width: 40%;
+      width: 30%;
 
       img {
         width: 70px;
@@ -30,16 +30,17 @@ background-color: #CFFADA;
       }
     }
     .bond__wrapper {
-      width: 50%;
+      width: 60%;
       height: 0.5%;
       border: 1px solid #edfcf1;
-      background-color: #edfcf1;
+     background-color: #edfcf1;
       border-radius: 20px;
 
       p {
         font-size: 16px;
         font-weight: 500;
         padding-left: 6%;
+        color: gray;
       }
     }
   }
@@ -82,8 +83,8 @@ background-color: #CFFADA;
 }
 
 @media screen and (min-width:350px) and (max-width:650px){
-    .desktop__body {
-   height: 310vh;
+    .desktopone__body {
+   height: 360vh;
     padding: 40px 20% 20px 15%;
  
 

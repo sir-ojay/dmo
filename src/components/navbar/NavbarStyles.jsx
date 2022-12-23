@@ -6,13 +6,13 @@ import { Link as LinkR } from "react-router-dom";
 export const NavContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 10;
   justify-content: space-between;
   align-items: center;
-  // padding: 0px 10px 0px 0px;
+  padding: 20px 10px 0px 0px;
   position: sticky;
-  background: #cffada;
+  background-color: #e8ffee;
   top: 0;
   @media screen and (max-width: 768px) {
     padding: 1em;
@@ -81,13 +81,12 @@ export const NavLinks = styled(LinkR)`
 
 export const LoginContainer = styled.div`
   background: #;
-  width: 170px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   padding-top: 15px;
   border-radius: 5px;
-  border: 1px solid green;
   margin-right: 20px;
-  border: 1px solid #3ade76;
+  border: 1px solid #006e1d;
   @media screen and (max-width: 1024px) {
     width: 90%;
   }
@@ -95,9 +94,9 @@ export const LoginContainer = styled.div`
 export const SignupContainer = styled.div`
   background: #000;
   border-radius: 5px;
-  height: 50px;
+  height: 40px;
   padding-top: 15px;
-  width: 170px;
+  width: 150px;
   margin-right: 20px;
   border: 1px solid #a02279;
   @media screen and (max-width: 1024px) {

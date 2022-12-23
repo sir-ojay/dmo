@@ -43,13 +43,13 @@ const Header = () => {
         </NavItem>
 
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/" spy={true} smooth={true} duration={500} className='text_faint'>
             {" "}
             Portfolio{" "}
           </NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to="/" spy={true} smooth={true} duration={500}>
+          <NavLinks to="/" spy={true} smooth={true} duration={500} className='text_faint'>
             {" "}
             Notification{" "}
           </NavLinks>
