@@ -1,78 +1,87 @@
-.cart_container{
+.cart_container {
   background-color: #e8ffee;
 
-.cart__wapper {
-  padding:10px 55px 10px 31px ;
-  .cart__flex {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0.4% 5%;
-    margin: 10px;
-    background-color: #e8ffee;
-    border: 1px solid #006e1d;
-    border-radius: 5px;
-  }
-
-  .cart__flex_start {
-    display: inherit;
-    justify-content: inherit;
-    width: 70%;
-
-    .image_wrapper {
-      width: 10%;
-      img {
-        width: 70px;
-        height: 70px;
-      }
-    }
-    .auto_wrapper {
+  .cart__wapper {
+    padding: 10px 55px 10px 31px;
+    .cart__flex {
+      display: flex;
+      justify-content: space-between;
+      height: 100px;
+      padding: 0.4% 5%;
+      margin: 10px;
       background-color: #e8ffee;
       border: 1px solid #006e1d;
       border-radius: 5px;
-      height: 40px;
-      width: 15%;
-      margin-top: 2%;
 
-      .text_green {
-        color: darkgreen;
-        padding: 0px 0px 10px 27px;
+      .cart__flex_start {
+        display: inherit;
+        justify-content: inherit;
+        width: 70%;
+
+        .image_wrapper {
+          width: 10%;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+        .auto_wrapper {
+          background-color: #e8ffee;
+          border: 1px solid #006e1d;
+          border-radius: 5px;
+          height: 40px;
+          width: 15%;
+          margin-top: 2%;
+
+          .text_green {
+            color: darkgreen;
+            padding: 0px 0px 10px 27px;
+          }
+        }
+        .text_red {
+          color: red;
+        }
+
+        .savings__det {
+          width: 100%;
+
+          .currency_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        }
       }
     }
-    .text_red {
-      color: red;
-    }
-  }
-
-  .fees__wrapper {
-    height: 140px;
-    padding: 0.4% 5%;
-    margin: 10px;
-    background-color: #e8ffee;
-    border: 1px solid #006e1d;
-    border-radius: 5px;
-    .fees__flex {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .checkout__wrapper {
-    display: flex;
-    justify-content: right;
-
-    .checkout {
-      width: 150px;
-      background-color: #10853b;
-      border: 1px solid #10853b;
+    .fees__wrapper {
+      height: 140px;
+      padding: 0.4% 5%;
+      margin: 10px;
+      background-color: #e8ffee;
+      border: 1px solid #006e1d;
       border-radius: 5px;
+      .fees__flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
 
-      p {
-        font-size: 18px;
-        color: #fff;
-        padding: 1px 2px 2px 20%;
+    .checkout__wrapper {
+      display: flex;
+      justify-content: right;
+
+      .checkout {
+        width: 150px;
+        background-color: #10853b;
+        border: 1px solid #10853b;
+        border-radius: 5px;
+
+        p {
+          font-size: 18px;
+          color: #fff;
+          padding: 1px 2px 2px 20%;
+        }
       }
     }
   }
-}
 }

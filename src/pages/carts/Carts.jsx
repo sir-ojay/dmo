@@ -14,6 +14,7 @@ const Carts = () => {
       type: "Automatic",
       value: "Delete",
       currency: "Value(#)",
+      counter: "01",
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ const Carts = () => {
       type: "Automatic",
       value: "Delete",
       currency: "Value(#)",
+      counter: "01",
     },
   ];
   return (
@@ -46,16 +48,21 @@ const Carts = () => {
                 <p className="text_red">{savingsdetail.value}</p>
               </div>
 
-              <div>
+              <div className="savings__det">
                 <p>{savingsdetail.currency}</p>
-                <div>
+                <div className="currency_wrapper">
                   <p>
                     {" "}
                     <b>300,000.00</b>{" "}
                   </p>
-                  <AiOutlineMinusCircle />
-
-                  <AiOutlinePlusCircle />
+               
+                    <AiOutlineMinusCircle />
+                
+                  <p>{savingsdetail.counter}</p>
+             
+                    {" "}
+                    <AiOutlinePlusCircle />
+            
                 </div>
               </div>
             </div>
